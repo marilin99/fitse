@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  padding: 0;
+}
+
+header .header-banner {
+    width: 100%;
+    height: calc(100vh);
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+    float: left;
+    vertical-align:middle;
+}
+
+.menu a{
+    color: #778eff;
+    text-decoration: none; 
+    text-align: center;
+    font-size: 150%;
+    display:inline-flex;
+    padding: 20px;
+
+}
+
+.navbar_links{
+    float:right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.menu a:hover{
+    color:darkorange;
+}
+
+p{
+    color: #778eff;
+    text-decoration: none; 
+    text-align: center;
+    float: left;
+}
+
+.button{
+    background-color: #778eff;
+    background-image: linear-gradient(to right, #778eff, darkblue);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+}
+
+.button:hover{
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 15px 30px 0 rgba(0,0,0,0.10);
+}
+
+
+.intro-text{
+    text-align: center;
+    margin: 250px;
+    font-size: 220%;
+    color: 	#585858;
+}
+
+#staticText{
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+  color: #4d80e4;
+
+}
+
+
+#typeline {
+  font-size: 5rem;
+  line-height: 1;
+  color: #4d80e4;;
+  text-align:center;
+
+}
+
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+em {
+	border-right: .1em solid #4d80e4;
+	width: 20ch;
+	white-space: nowrap;
+	overflow: hidden;
+  	margin-top: 0;
+  	color: #3295dd;
+	-webkit-animation: typing 3s steps(21, end),
+	blink-caret .5s step-end ease infinite alternate;
+}
+
+
+div.MouseScroll {
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    bottom: 25px;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 -10px;
+    z-index: 2;
+}
+
+path.MouseScroll--chevron {
+	animation: ChevronAnimation 2s ease infinite;
+	transform: translateY(3px);
+}
+
+@keyframes ChevronAnimation {
+	0% {
+		transform: translateY(3px);
+		opacity: 1
+	}
+	50% {
+		transform: translateY(8px);
+		opacity: 0
+	}
+	60% {
+		transform: translateY(3px);
+		opacity: 0
+	}
+}
+
+.main {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+    z-index: 1;
+}
+
+#clients, .item{
+    font-size: 2.5rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.box {
+    box-sizing: border-box;
+    border: 2px #585858;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    border-style: solid;
+    padding-bottom: 60px;
+    box-shadow:  3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+}
+
+.box h1{
+    padding-top: 60px;
+    font-size: 250%;
+    color: #585858;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+
+.column{
+    float: left;
+    width:33%;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.post {
+    width: 100%;
+    background-image: linear-gradient(to right, darkblue, #778eff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    text-align:center;
+    line-height: 1.6;
+    padding-right: 50px;
+}
+
+ul { list-style-type: none; }
+
+.container {
+    margin-top: 50px;
+    margin-bottom:25px;
+}
+
+.button_{
+    background-color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 25px 35px;
+   
+}
+
+.button_:hover{
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 15px 30px 0 rgba(0,0,0,0.10);
+}
+
+.left {
+  width: 50%;
+}
+
+.right{
+  width: 50%;
+}
+
+footer{
+    margin-bottom:25px;
+    text-align: center;
+    color: #585858;
+}
